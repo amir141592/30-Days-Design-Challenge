@@ -1,15 +1,4 @@
-# 30-days-design-challenge
+# 30 Days Design Challenge
 
-To install dependencies:
-
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run  
-```
-
-This project was created using `bun init` in bun v1.0.11. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+This a design challenge that takes 30 days  
+to complete.
