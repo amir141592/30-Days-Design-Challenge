@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Wix Madefor Display", sans-serif;
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #264653;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.btn {
+  margin: 3rem;
+  width: 15rem;
+  height: 4rem;
+  border-radius: 100rem;
+  border: none;
+  box-shadow: 0 1rem 3rem hsla(0, 0, 0, 0.1);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: translateY(0.2rem);
+}
+
+.success-btn {
+  background-color: #2a9d8f;
+}
+
+.fail-btn {
+  background-color: #fd575a;
+}
+
+.modal {
+  width: 25rem;
+  height: 30rem;
+  background-color: #eee;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 3rem hsla(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.open.modal {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s;
+}
+
+.modal-icon {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: -3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-icon i {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.success-icon {
+  background-color: #2a9d8f;
+  box-shadow: 0 0.5rem 2rem hsla(173, 58%, 39%, 0.3);
+}
+
+.fail-icon {
+  background-color: #fd575a;
+  box-shadow: 0 0.5rem 2rem hsla(359, 91%, 61%, 0.3);
+}
+
+.modal-top {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-top h1 {
+  font-size: 2.5rem;
+  color: #264653;
+}
+
+.modal-bottom {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.modal-bottom-success {
+  background-color: #2a9d8f;
+}
+
+.modal-bottom-fail {
+  background-color: #fd575a;
+}
+
+.modal-btn {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 2rem;
+  border: none;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  box-shadow: 0 1rem 2rem hsla(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.modal-btn:active {
+  transform: translateY(0.2rem);
+}
+
+.modal-bottom-fail .modal-btn {
+  color: #fd575a;
+}
+
+.modal-bottom-success .modal-btn {
+  color: #2a9d8f;
+}
